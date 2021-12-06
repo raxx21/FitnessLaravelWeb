@@ -1,0 +1,405 @@
+.scroll-nav {
+    background-color: var(--orange);
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+nav {
+    height: 4.5rem;
+    /* background-color: var(--primary); */
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.left-nav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.left-nav a {
+    margin-left: -0px;
+    display: flex;
+    align-items: center;
+}
+
+.left-nav img {
+    margin-left: 30px;
+    height: 1.8rem;
+}
+
+.location {
+    padding: 10px 10px;
+    border-radius: 8px;
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    transition: all 0.2s ease-out;
+    margin-left: 10px;
+}
+
+.location p {
+    margin-left: 5px;
+}
+
+.location:hover {
+    background-color: whitesmoke;
+    cursor: pointer;
+    color: var(--primary);
+}
+
+.location span {
+    font-weight: 600;
+}
+
+.search {
+    width: 100%;
+}
+
+.search input {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 10px;
+    border: 2px solid black;
+    stroke: none;
+}
+
+.search-icon {
+    cursor: pointer;
+    margin-left: -45px;
+}
+
+.search {
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu {
+    flex: .5;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 70vw;
+    justify-content: end;
+    align-items: center;
+}
+
+.nav-links {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 12px;
+}
+
+.nav-links:hover {
+    background-color: whitesmoke;
+    border-radius: 4px;
+    color: var(--primary);
+    transition: all 0.2s ease-out;
+}
+
+.side-menu {
+    background-color: var(--lightBlue);
+    width: 250px;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 50px;
+    left: -100%;
+    transition: 850ms;
+    z-index: 20;
+}
+
+.active {
+    left: 0;
+    transition: 350ms;
+}
+
+.nav-text {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 8px 0px 8px 16px;
+    list-style: none;
+    height: 60px;
+}
+
+.nav-text a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 4px;
+}
+
+.nav-text a:hover {
+    background-color: var(--mediumBlue);
+}
+
+.nav-menu-items {
+    width: 100%;
+}
+
+.navbar-toggle {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.nav-text span {
+    margin-left: 16px;
+}
+
+.menu-bars {
+    margin-left: 15px;
+}
+
+.spacer {
+    width: 30px;
+}
+
+
+/* Login model */
+
+.input_field {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.input_field label {
+    margin-left: 4px;
+}
+
+.input_field input {
+    height: 45px;
+    margin-top: 8px;
+    border-radius: 10px;
+    stroke: none;
+    border: 1px solid whitesmoke;
+    padding-left: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.login-class {
+    background-color: white;
+    width: 380px;
+    border-radius: 10px;
+    /* box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.2); */
+    color: black;
+    margin-top: 30px;
+    padding: 20px;
+    z-index: 10;
+}
+
+.sign-class {
+    background-color: white;
+    width: 600px;
+    border-radius: 10px;
+    /* box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.2); */
+    color: black;
+    margin-top: 0px;
+    padding: 20px;
+    z-index: 10;
+}
+
+h1 {
+    font-size: 26px;
+    font-weight: 500;
+    color: var(--primary);
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: 300;
+    margin-left: 4px;
+    color: grey;
+}
+
+.login_btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.login_btn button {
+    color: white;
+    background-color: var(--orange);
+    stroke: none;
+    border: 1px solid var(--orange);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+    border-radius: 6px;
+}
+
+.login_btn .register-btn {
+    color: var(--orange);
+    background-color: white;
+    border: 2px solid var(--orange);
+}
+
+.login_btn .register-btn:hover {
+    color: white;
+    background-color: var(--orange);
+}
+
+p {
+    font-size: 16px;
+    margin-top: 6px;
+    margin-left: 0px;
+    font-weight: 400;
+    color: var(--orange);
+}
+
+.login-class a {
+    float: right;
+    padding: 3px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.login-class a:hover {
+    background-color: whitesmoke;
+}
+
+.sign-class a {
+    float: right;
+    padding: 3px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.sign-class a:hover {
+    background-color: whitesmoke;
+}
+
+.login {
+    display: none;
+    position: absolute;
+    top: 15%;
+    left: 38%;
+    margin: auto;
+}
+
+.sign {
+    display: none;
+    position: absolute;
+    top: 18%;
+    left: 30%;
+    margin: auto;
+}
+
+.active {
+    display: flex;
+    animation: slide 0s ease-in;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.field {
+    display: flex;
+    justify-content: space-between;
+}
+
+.google-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.login-class small {
+    color: grey;
+    font-size: 12px;
+}
+
+.google-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.google-btn img {
+    height: 22px;
+    margin-right: 10px;
+}
+
+.google-btn>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    /* padding: 6px 20px; */
+    border-radius: 8px;
+    border: var(--facebook) 2px solid;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.google-btn p {
+    color: black;
+    margin-bottom: 5px;
+}
+
+.google-btn>div:hover {
+    background-color: var(--facebook);
+}
+
+.btn-1 {
+    flex: 1;
+}
+
+.btn-2 {
+    flex: 1;
+}
+
+.already {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.already p {
+    color: black;
+}
+
+.already span {
+    color: var(--orange);
+    cursor: pointer;
+}
+
+
+/* Login model End */
