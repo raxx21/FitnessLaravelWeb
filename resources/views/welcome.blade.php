@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="{{ URL::asset('css/carousel.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('css/banner.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('css/main.css') }}">
-
+    <link rel="stylesheet" href="{{ URL::asset('css/post.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <style>
 
@@ -172,23 +173,23 @@
                 <h1>Welcome to Fitness</h1>
                 <h4>Join to use</h4>
                 <div class="field">
-                    <div class="input_field">
+                    <div style="width: 50%;" class="input_field">
                         <label htmlFor="">First Name</label>
-                        <input type="text" name="first" placeholder="First Name" id="" />
+                        <input style="width: 95%;" type="text" name="first" placeholder="First Name" id="" />
                     </div>
-                    <div class="input_field">
+                    <div style="width: 50%;" class="input_field">
                         <label htmlFor="">Last Name</label>
-                        <input type="text" name="last" placeholder="Last Name" id="" />
+                        <input style="width: 95%;" type="text" name="last" placeholder="Last Name" id="" />
                     </div>
                 </div>
                 <div class="field">
-                    <div class="input_field">
+                    <div style="width: 50%;" class="input_field">
                         <label htmlFor="">Email or Phone No.</label>
-                        <input type="email" name="email" placeholder="example@gmail.com" id="" />
+                        <input style="width: 95%;" type="email" name="email" placeholder="example@gmail.com" id="" />
                     </div>
-                    <div class="input_field">
+                    <div style="width: 50%;" class="input_field">
                         <label htmlFor="">Password</label>
-                        <input type="password" name="password" placeholder="Min 8 character" id="" />
+                        <input style="width: 95%;" type="password" name="password" placeholder="Min 8 character" id="" />
                     </div>
                 </div>
                 <div class="input_field">
@@ -203,11 +204,11 @@
                 </div>
                 <div class="google-btn">
                     <div class="btn-1">
-                        <img src={google} alt="" />
+                        <img src="https://img.icons8.com/color/48/ffffff/google-logo.png" />
                         <p>Google</p>
                     </div>
                     <div class="btn-2">
-                        <img src={facebook} alt="" />
+                        <img src="https://img.icons8.com/color/48/ffffff/facebook-new.png" />
                         <p>FaceBook</p>
                     </div>
                 </div>
@@ -254,18 +255,150 @@
 
         <!-- Banners -->
         <div class="banner-field">
-            <div class="banner" style="background-color: #FF9300;"></div>
-            <div class="banner" style="background-color: #1a3166;"></div>
-            <div class="banner" style="background-color: #407bff;"></div>
+            <div class="banner" style="background-color: #95D1CC;">
+                <img src="{{URL::asset('img/run.jpg')}}" alt="">
+                <div class="banner-content">
+                    <h1 style="margin-top: 5px;">5KM Run(Hyderabad)</h1>
+                    <br>
+                    <p>5km run for to spread awareness about the Orfans Lorem ipsum dolor sit amet consectetur, nihil non.</p>
+                    <p style="margin-top: 10px;">Timings:- 10/12/2021 10AM</p>
+                </div>
+            </div>
+            <div class="banner" style="background-color: #F3950D;">
+                <img src="{{URL::asset('img/party.jpg')}}" alt="">
+                <div class="banner-content">
+                    <h1 style="margin-top: 5px;">5KM Run(Hyderabad)</h1>
+                    <br>
+                    <p>5km run for to spread awareness about the Orfans Lorem ipsum dolor sit amet consectetur, nihil non.</p>
+                    <p style="margin-top: 10px;">Timings:- 10/12/2021 10AM</p>
+                </div>
+            </div>
+            <div class="banner" style="background-color: #EBE645;">
+                <img src="{{URL::asset('img/donation.jpg')}}" alt="">
+                <div class="banner-content">
+                    <h1 style="margin-top: 5px;">5KM Run(Hyderabad)</h1>
+                    <br>
+                    <p>5km run for to spread awareness about the Orfans Lorem ipsum dolor sit amet consectetur, nihil non.</p>
+                    <p style="margin-top: 10px;">Timings:- 10/12/2021 10AM</p>
+                </div>
+            </div>
         </div>
         <!-- Banners End -->
 
+        <!-- Post -->
+        <div class="post-feild">
+            <div class="post">
+                <div class="post-head">
+                    <div>
+                        <img src="{{URL::asset('img/person.jpg')}}" alt="">
+                        <div class="post-name">
+                            <h2>Rajesh Chityal</h2>
+                            <p>Hyderabad</p>
+                        </div>
+                    </div>
+                    <img style="height: 20px; width: 20px;" src="{{URL::asset('img/threedots.png')}}" />
+                </div>
+                <div class="post-img">
+                    <img src="{{URL::asset('img/post.jpg')}}" alt="">
+                </div>
+                <div class="post-likes">
+                    <div>
+                        <button class="like-button"></button>
+                        <img style="margin-left: 20px; margin-top: 12px;" src="https://img.icons8.com/material-outlined/34/000000/filled-topic.png" />
+                        <img style="margin-left: 6px; margin-top: 12px;" src="https://img.icons8.com/material-outlined/28/000000/share.png" />
+                    </div>
+                    <div>
+                        <button id="join">Join</button>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-head">
+                    <div>
+                        <img src="{{URL::asset('img/person.jpg')}}" alt="">
+                        <div class="post-name">
+                            <h2>Atish Manala</h2>
+                            <p>Mumbai</p>
+                        </div>
+                    </div>
+                    <img style="height: 20px; width: 20px;" src="{{URL::asset('img/threedots.png')}}" />
+                </div>
+                <div class="post-img">
+                    <img src="{{URL::asset('img/post1.jpg')}}" alt="">
+                </div>
+                <div class="post-likes">
+                    <div>
+                        <button class="like-button"></button>
+                        <img style="margin-left: 20px; margin-top: 12px;" src="https://img.icons8.com/material-outlined/34/000000/filled-topic.png" />
+                        <img style="margin-left: 6px; margin-top: 12px;" src="https://img.icons8.com/material-outlined/28/000000/share.png" />
+                    </div>
+                    <div>
+                        <button id="join">Join</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="post-feild">
+            <div class="post">
+                <div class="post-head">
+                    <div>
+                        <img src="{{URL::asset('img/person.jpg')}}" alt="">
+                        <div class="post-name">
+                            <h2>Rajesh Chityal</h2>
+                            <p>Hyderabad</p>
+                        </div>
+                    </div>
+                    <img style="height: 20px; width: 20px;" src="{{URL::asset('img/threedots.png')}}" />
+                </div>
+                <div class="post-img">
+                    <img src="{{URL::asset('img/post.jpg')}}" alt="">
+                </div>
+                <div class="post-likes">
+                    <div>
+                        <button class="like-button"></button>
+                        <img style="margin-left: 20px; margin-top: 12px;" src="https://img.icons8.com/material-outlined/34/000000/filled-topic.png" />
+                        <img style="margin-left: 6px; margin-top: 12px;" src="https://img.icons8.com/material-outlined/28/000000/share.png" />
+                    </div>
+                    <div>
+                        <button id="join">Join</button>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-head">
+                    <div>
+                        <img src="{{URL::asset('img/person.jpg')}}" alt="">
+                        <div class="post-name">
+                            <h2>Atish Manala</h2>
+                            <p>Mumbai</p>
+                        </div>
+                    </div>
+                    <img style="height: 20px; width: 20px;" src="{{URL::asset('img/threedots.png')}}" />
+                </div>
+                <div class="post-img">
+                    <img src="{{URL::asset('img/post1.jpg')}}" alt="">
+                </div>
+                <div class="post-likes">
+                    <div>
+                        <button class="like-button"></button>
+                        <img style="margin-left: 20px; margin-top: 12px;" src="https://img.icons8.com/material-outlined/34/000000/filled-topic.png" />
+                        <img style="margin-left: 6px; margin-top: 12px;" src="https://img.icons8.com/material-outlined/28/000000/share.png" />
+                    </div>
+                    <div>
+                        <button id="join">Join</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Post End-->
+        <br><br><br><br>
     </main>
     <!-- Main End-->
 
 
     <script src="{{URL::asset('js/navbar.js')}}"></script>
     <script src="{{URL::asset('js/carousel.js')}}"></script>
+    <script src="{{URL::asset('js/main.js')}}"></script>
 </body>
 
 </html>
