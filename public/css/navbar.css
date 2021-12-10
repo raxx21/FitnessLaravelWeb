@@ -19,6 +19,7 @@ nav {
     font-family: 'Roboto', sans-serif;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     overflow: hidden;
+    flex-wrap: wrap;
 }
 
 .left-nav {
@@ -45,7 +46,6 @@ nav {
     font-size: 16px;
     align-items: center;
     transition: all 0.2s ease-out;
-    margin-left: 10px;
 }
 
 .location p {
@@ -60,10 +60,6 @@ nav {
 
 .location span {
     font-weight: 600;
-}
-
-.search {
-    width: 100%;
 }
 
 .search input {
@@ -81,20 +77,40 @@ nav {
 }
 
 .search {
-    flex: 2;
+    flex: 1.6;
     display: flex;
+    align-items: center;
+}
+
+.search1 input {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 10px;
+    border: 2px solid black;
+    stroke: none;
+}
+
+.search1-icon {
+    cursor: pointer;
+    margin-left: -45px;
+}
+
+.search1 {
+    display: none;
+    flex: 1.6;
     align-items: center;
 }
 
 .nav-menu {
     flex: .5;
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(5, auto);
     grid-gap: 10px;
     list-style: none;
     text-align: center;
     width: 70vw;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
 }
 
@@ -115,10 +131,10 @@ nav {
 .side-menu {
     background-color: var(--lightBlue);
     width: 250px;
-    height: 95vh;
+    height: 100%;
     display: flex;
     justify-content: center;
-    position: fixed;
+    position: absolute;
     top: 50px;
     left: -100%;
     transition: 850ms;
@@ -173,7 +189,7 @@ nav {
 }
 
 .menu-bars {
-    margin-left: 15px;
+    margin-left: 17px;
 }
 
 .spacer {
@@ -306,7 +322,6 @@ p {
     position: absolute;
     top: 15%;
     left: 38%;
-    margin: auto;
 }
 
 .sign {
@@ -404,3 +419,183 @@ p {
 
 
 /* Login model End */
+
+@media (max-width:1200px) {
+    .login {
+        left: 34%;
+    }
+    .sign {
+        left: 26%;
+    }
+}
+
+@media (max-width:1050px) {
+    .location p {
+        font-size: 12px;
+    }
+    p {
+        font-size: 13px;
+    }
+    .login {
+        left: 33%;
+    }
+    .sign {
+        left: 20%;
+    }
+}
+
+@media (max-width:850px) {
+    .login {
+        left: 28%;
+    }
+    .sign {
+        left: 16%;
+    }
+}
+
+@media (max-width:800px) {
+    .sign {
+        left: 14%;
+    }
+}
+
+@media (max-width:750px) {
+    .sign {
+        left: 26%;
+    }
+    .sign-class {
+        width: 380px;
+    }
+}
+
+@media (max-width:700px) {
+    .login {
+        top: 10%;
+        left: 23%;
+    }
+    .sign {
+        top: 10%;
+        left: 23%;
+    }
+}
+
+@media (max-width:600px) {
+    .login {
+        top: 10%;
+        left: 19%;
+    }
+    .sign {
+        top: 10%;
+        left: 19%;
+    }
+}
+
+@media (max-width:550px) {
+    .login {
+        left: 16%;
+    }
+    .sign {
+        left: 16%;
+    }
+    .scroll-nav {
+        height: 40px;
+        font-size: 16px;
+    }
+    nav {
+        height: 6.2rem;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .search {
+        display: none;
+    }
+    .search1 {
+        display: flex;
+        flex-basis: 100%;
+        margin-bottom: 10px;
+    }
+    .nav-links {
+        font-size: 18px;
+    }
+    .side-menu {
+        top: 40px;
+    }
+}
+
+@media (max-width:500px) {
+    .login-class {
+        width: 320px;
+        font-size: 14px;
+    }
+    .sign-class {
+        width: 320px;
+        font-size: 14px;
+    }
+    .login {
+        left: 18%;
+    }
+    .sign {
+        left: 18%;
+    }
+}
+
+@media (max-width:450px) {
+    .nav-menu {
+        flex: .1;
+    }
+    .left-nav img {
+        margin-left: 20px;
+    }
+    .login-class {
+        width: 300px;
+        font-size: 14px;
+    }
+    .login {
+        top: 6%;
+        left: 15%;
+    }
+    .sign-class {
+        width: 300px;
+        font-size: 14px;
+    }
+    .sign {
+        top: 6%;
+        left: 15%;
+    }
+}
+
+@media (max-width:400px) {
+    .login-class {
+        width: 280px;
+        font-size: 14px;
+        padding: 15px;
+    }
+    .login {
+        top: 6%;
+        left: 13%;
+    }
+    .sign-class {
+        width: 280px;
+        font-size: 14px;
+        padding: 15px;
+    }
+    .sign {
+        top: 6%;
+        left: 13%;
+    }
+}
+
+@media (max-width:350px) {
+    .nav-links {
+        font-size: 16px;
+    }
+    .spacer {
+        width: 0px;
+    }
+    .login {
+        left: 10%;
+    }
+    .sign {
+        left: 10%;
+    }
+}
