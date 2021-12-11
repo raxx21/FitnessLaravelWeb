@@ -520,6 +520,9 @@ p {
     .side-menu {
         top: 40px;
     }
+    .navbar-toggle {
+        margin-left: 10px;
+    }
 }
 
 @media (max-width:500px) {
@@ -561,6 +564,12 @@ p {
     .sign {
         top: 6%;
         left: 15%;
+    }
+    .left-nav img {
+        margin-left: 10px;
+    }
+    nav {
+        height: 7rem;
     }
 }
 

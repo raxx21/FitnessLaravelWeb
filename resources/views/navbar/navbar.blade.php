@@ -7,7 +7,7 @@
 <!-- Navbar -->
 <nav class="NavbarItems">
     <div class="left-nav">
-        <a href="#" class="menu-bars" onclick="menu()"><img style="margin-left: 20px;" src="https://img.icons8.com/material-outlined/24/000000/menu--v1.png" /></a>
+        <a href="#" class="menu-bars" onclick="menu()"><img id="hum" src="https://img.icons8.com/material-outlined/24/000000/menu--v1.png" /></a>
         <img style="height: 2.5rem;" src="{{ URL::asset('img/fflogo.png') }}" alt="" />
         <div class="spacer"></div>
         <div class="location">

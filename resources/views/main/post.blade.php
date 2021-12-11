@@ -14,8 +14,8 @@
     </div>
     <div class="post-likes">
         <div>
-            <button class="like-button"></button>
-            <img style="margin-left: 20px; margin-top: 12px;" src="https://img.icons8.com/material-outlined/34/000000/filled-topic.png" />
+        <img style="margin-top: 12px;" src="https://img.icons8.com/material-outlined/28/000000/like.png"/>
+            <img style="margin-left: 6px; margin-top: 12px;" src="https://img.icons8.com/material-outlined/34/000000/filled-topic.png" />
             <img style="margin-left: 6px; margin-top: 12px;" src="https://img.icons8.com/material-outlined/28/000000/share.png" />
         </div>
         <div>
