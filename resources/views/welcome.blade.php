@@ -7,22 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fitness 99</title>
     <link rel="stylesheet" href="{{ URL::asset('css/color.css') }}">
-    <link rel="stylesheet" href="{{ URL::asset('css/welcome.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('css/welcome/welcome.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('css/navbar.css') }}">
-    <link rel="stylesheet" href="{{ URL::asset('css/carousel.css') }}">
-    <link rel="stylesheet" href="{{ URL::asset('css/banner.css') }}">
-    <link rel="stylesheet" href="{{ URL::asset('css/main.css') }}">
-    <link rel="stylesheet" href="{{ URL::asset('css/post.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('css/welcome/carousel.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('css/welcome/banner.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('css/welcome/post.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<style>
-
-</style>
 
 <body>
     <!-- Header -->
     <header>
-        @include('navbar.navbar')
+        @include('navbar.navbar',['user'=>'false','tag'=>$tag])
     </header>
     <!-- Header End -->
 
@@ -42,13 +38,13 @@
         <!-- Post -->
         <div class="post-feild">
             <!-- Post component-->
-            @include('main.post',['name'=>'Rajesh Chityal','profile'=>'img/person.jpg','location'=>'Mumbai','post'=>'img/post1.jpg'])
+            @include('main.post',['name'=>'Rajesh Chityal','profile'=>'img/person.jpg','location'=>'Mumbai','post'=>'img/post1.jpg','joined'=>'false'])
             <!-- Post component-->
-            @include('main.post',['name'=>'Atish Manala','profile'=>'img/person1.jpg','location'=>'Hyderabad','post'=>'img/post.jpg'])
+            @include('main.post',['name'=>'Atish Manala','profile'=>'img/person1.jpg','location'=>'Hyderabad','post'=>'img/post.jpg','joined'=>'false'])
             <!-- Post component-->
-            @include('main.post',['name'=>'Rajesh Chityal','profile'=>'img/person.jpg','location'=>'Mumbai','post'=>'img/post1.jpg'])
+            @include('main.post',['name'=>'Rajesh Chityal','profile'=>'img/person.jpg','location'=>'Mumbai','post'=>'img/post1.jpg','joined'=>'false'])
             <!-- Post component-->
-            @include('main.post',['name'=>'Atish Manala','profile'=>'img/person1.jpg','location'=>'Hyderabad','post'=>'img/post.jpg'])
+            @include('main.post',['name'=>'Atish Manala','profile'=>'img/person1.jpg','location'=>'Hyderabad','post'=>'img/post.jpg','joined'=>'false'])
         </div>
 
         <!-- Post End-->

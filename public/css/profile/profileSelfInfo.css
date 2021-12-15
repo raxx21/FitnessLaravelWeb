@@ -1,0 +1,42 @@
+.self-info {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.self-info>div {
+    flex: 1;
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
+    border-radius: 6px;
+}
+
+.self-info .skill h1 {
+    font-size: 1.5vw;
+}
+
+.self-info .skill span {
+    font-size: 1.5vw;
+}
+
+.self-info #group-pic {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.self-info .skill-head p {
+    cursor: pointer;
+}
+
+.self-info .skill-head p:hover {
+    text-decoration: underline;
+}
+
+.self-info .skill {
+    padding-bottom: 10px;
+}
+
+.skill-head {
+    background-color: #161E54;
+}

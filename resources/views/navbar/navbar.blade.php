@@ -22,9 +22,18 @@
         </div>
     </div>
     <ul class="nav-menu">
-        <li><a class="nav-links" href="#" onclick="login()">
+            <li><a class="nav-links" href="#" onclick="login()">
                     Login
                 </a></li>
+            @if($tag == 'profile')
+            <li><a class="nav-links" href="{{route('welcome')}}" onclick="">
+                    Home
+                </a></li>
+            @else
+            <li><a class="nav-links" href="{{route('profile')}}" onclick="">
+                    Profile
+                </a></li>
+            @endif
     </ul>
     <div class="search1">
         <div class="search1">

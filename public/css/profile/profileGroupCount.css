@@ -1,0 +1,31 @@
+.group-count-field {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.group-box {
+    margin: 10px;
+    padding: 10px;
+    background-color: #FF8E00;
+    width: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 6px;
+    color: wheat;
+}
+
+.group-box h1 {
+    font-size: 2vw;
+    font-weight: 500;
+}
+
+.group-box p {
+    font-size: 2vw;
+}
+
+.group-box:hover {
+    color: white;
+    cursor: pointer;
+}

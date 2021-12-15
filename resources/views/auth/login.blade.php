@@ -15,7 +15,7 @@
             <input type="password" name="password" placeholder="Min 8 character" id="" />
         </div>
         <div class="login_btn">
-            <button>Login</button>
+            <button onClick="">Login</button>
         </div>
         <p>Forgot Password ?</p>
         <div class="login_btn">

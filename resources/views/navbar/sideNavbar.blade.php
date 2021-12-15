@@ -2,7 +2,7 @@
 <div class="side-menu" id="side-menu">
     <ul class="nav-menu-items">
         <li class="navbar-toggle">
-            <a href="#" style="margin-top: -20px;" class="menu-bars" onclick="menu()">
+            <a href="#" style="margin-top: 0px;" class="menu-bars" onclick="menu()">
                 <img src="https://img.icons8.com/material-outlined/24/ffffff/delete-sign.png" />
             </a>
         </li>
